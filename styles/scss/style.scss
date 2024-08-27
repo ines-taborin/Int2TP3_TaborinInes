@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1280px;
+	width: 90%;
+	margin-inline: auto;
+}
+
