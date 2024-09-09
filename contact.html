@@ -8,10 +8,10 @@
     <meta name="author" content="Inès Taborin" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/css/style.css" />
+    <link rel="stylesheet" href="styles/css/style.css" />
 
     <!-- Custom JS -->
-    <script src="./js/scripts.js defer"></script>
+    <script src="js/scripts.js"></script>
 
     <!-- Font Awesome -->
     <link
@@ -86,15 +86,15 @@
               <li>
                 <a
                   href="portfolio.html"
-                  class="block py-2 px-3 text-base-300 rounded md:bg-transparent md:text-base-300 md:p-0"
-                  aria-current="page"
+                  class="block py-2 px-3 text-white rounded hover:text-accent md:hover:text-accent md:p-0"
                   >Portfolio</a
                 >
               </li>
               <li>
                 <a
                   href="contact.html"
-                  class="block py-2 px-3 text-white rounded hover:text-accent md:hover:text-accent md:p-0"
+                  class="block py-2 px-3 text-base-300 rounded md:bg-transparent md:text-base-300 md:p-0"
+                  aria-current="page"
                   >Contact</a
                 >
               </li>
@@ -103,7 +103,113 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!--form container-->
+      <section class="container pt-4 pb-4">
+        <div class="chat chat-start pb-4">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img alt="photo de moi" src="assets/images/moi.jpg" />
+            </div>
+          </div>
+          <div class="chat-bubble">
+            Envie de travailler avec moi ? Remplis le formulaire ci-dessous pour
+            me contacter.
+          </div>
+        </div>
+        <div class="flex-1">
+          <form id="form1" novalidate onsubmit="handleSubmit(event)">
+            <div class="grid my-4 lg:grid-cols-4 sm:grid-cols-1 gap-4">
+              <label class="input input-bordered flex items-center gap-2">
+                Nom
+                <input type="text" class="grow" id="nom" name="nom" />
+              </label>
+              <label class="input input-bordered flex items-center gap-2">
+                Email
+                <input type="text" class="grow" id="email" name="email" />
+              </label>
+              <label class="input input-bordered flex items-center gap-2">
+                Télephone
+                <input
+                  type="tel"
+                  class="grow"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+              </label>
+              <label class="input input-bordered flex items-center gap-2">
+                Pays
+                <input type="text" class="grow" id="pays" name="pays" />
+              </label>
+            </div>
+            <div class="grid my-4 lg:grid-cols-3 sm:grid-cols-1 gap-4">
+              <div class="flex items-center justify-center gap-4">
+                <span class="label-text">Entreprise</span>
+                <input
+                  type="radio"
+                  id="type"
+                  name="type"
+                  class="radio radio-secondary"
+                  checked="checked" />
+                <span class="label-text">Indépendant</span>
+                <input
+                  type="radio"
+                  id="type"
+                  name="type"
+                  class="radio radio-secondary" />
+              </div>
+              <label
+                class="input input-bordered input-accent flex items-center gap-2">
+                Quand ?
+                <input type="date" id="date" />
+              </label>
+              <div class="flex items-center justify-center gap-4">
+                <select
+                  id="langue"
+                  class="select select-accent w-full max-w-xs">
+                  <option disabled selected>Quelle est votre langue ?</option>
+                  <option>Français</option>
+                  <option>Anglais</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid lg:grid-cols-1 sm:grid-cols-1 gap-4 my-4">
+              <textarea
+                class="textarea textarea-secondary"
+                placeholder="Parles moi de ton projet"></textarea>
+            </div>
+            <input type="submit" value="Envoyer" class="btn btn-primary" />
+          </form>
+        </div>
+      </section>
+
+      <!-- Aucune idée -->
+      <section class="container pt-4 pb-4">
+        <div class="flex w-full flex-col">
+          <div class="divider divider-primary">La dernière section</div>
+        </div>
+        <div class="items-center text-center my-4">
+          <p class="text-xl font-bold">Aucune idée de quoi mettre ici</p>
+          <p>
+            Du coup, je vais te mettre une vidéo de la nouvelle extension de WOW
+            qui est sortie il y a peu de temps, peut-être ça te donnera envie de
+            te lancer !
+          </p>
+        </div>
+        <div
+          class="flex my-4 items-center justify-center embed-responsive embed-responsive-1by1 relative w-full overflow-hidden">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2BAG-G-qz_Y?autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
 
     <!--Footer container-->
     <footer
