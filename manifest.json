@@ -10,7 +10,8 @@
             "src": "https://ines-taborin.github.io/Int2TP3_TaborinInes/assets/images/screenshot.png",
             "sizes": "1920x1080",
             "type": "image/png",
-            "purpose": "any maskable"
+            "label": "portfolio",
+            "form_factor": "wide"
         }
     ],
 
