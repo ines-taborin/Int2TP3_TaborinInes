@@ -70,10 +70,10 @@ const handleSubmit = (event) => {
         clearErrorMessage("projet");
     }
 
-    // Si tout est valide, envoyer le formulaire
+    // Si tout valide, envoyer 
     if (isValid) {
         console.log("C'est okay");
-        // form.submit(); // Décommentez ceci si vous souhaitez soumettre le formulaire après validation
+        
     }
 };
 
