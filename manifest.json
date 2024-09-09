@@ -1,0 +1,37 @@
+{
+    "name": "Ines Taborin Portfolio",
+    "short_name": "Portfolio",
+    "start_url": "https://ines-taborin.github.io/Int2TP3_TaborinInes",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#f6d860",
+    "screenshots": [
+        {
+            "src": "https://ines-taborin.github.io/Int2TP3_TaborinInes/assets/screenshot.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+
+    "icons": [
+        {
+            "src": "https://ines-taborin.github.io/Int2TP3_TaborinInes/assets/icone_144x144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://ines-taborin.github.io/Int2TP3_TaborinInes/assets/icone_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://ines-taborin.github.io/Int2TP3_TaborinInes/assets/icone_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
